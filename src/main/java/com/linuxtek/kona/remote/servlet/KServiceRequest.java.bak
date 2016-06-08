@@ -1,0 +1,17 @@
+/*
+ * Copyright (C) 2011 LinuxTek, Inc.  All Rights Reserved.
+ */
+package com.linuxtek.kona.remote.servlet;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public interface KServiceRequest {
+	/*
+    public HttpServletRequest getHttpServletRequest();
+    public void setHttpServletRequest(HttpServletRequest req);
+
+    public HttpServletResponse getHttpServletResponse();
+    public void setHttpServletResponse(HttpServletResponse resp);
+    */
+}

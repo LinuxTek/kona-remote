@@ -1,0 +1,68 @@
+/*
+ * Copyright (C) 2011 LINUXTEK, Inc.  All Rights Reserved.
+ */
+package com.linuxtek.kona.remote.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
+
+import com.linuxtek.kona.remote.servlet.KServiceRequest;
+import com.linuxtek.kona.remote.servlet.KServiceServlet;
+
+public abstract class KAbstractServiceRequest implements KServiceRequest {
+    private static Logger logger = Logger.getLogger(KAbstractServiceRequest.class);
+
+    /*
+    private HttpServletRequest req = null;
+    private HttpServletResponse resp = null;
+
+
+    public void setHttpServletRequest(HttpServletRequest req) {
+        //logger.debug(getClass().getName() 
+        //    + ":\nsetting HttpServletRequest:\n" + req);
+        this.req = req;
+    }
+
+    public void setHttpServletResponse(HttpServletResponse resp) {
+        //logger.debug(getClass().getName()
+        //    + ":\nsetting HttpServletResponse:\n" + resp);
+        this.resp = resp;
+    }
+
+    public HttpServletRequest getHttpServletRequest() {
+        //logger.debug(getClass().getName() 
+        //    + ":\nreturning HttpServletRequest:\n" + req);
+        return req;
+    }
+
+    public HttpServletResponse getHttpServletResponse() {
+        //logger.debug(getClass().getName() 
+        //    + ":\nreturning HttpServletResponse:\n" + resp);
+        return resp;
+    }
+
+    protected abstract void sendEmail(String mailhost, String from, String to, 
+            String subject,String body, Boolean isHTML, String cc, String bcc);
+            */
+    
+    
+    /*
+    protected KServiceRequest getService(String servicePath) {
+        Object o = KServiceServlet.getContextBean(req, resp, servicePath);
+        
+        if (o == null) {
+            throw new IllegalArgumentException(
+            		"Service not found for path: " + servicePath);
+        }
+        
+        if (! (o instanceof KServiceRequest)) {
+            throw new IllegalArgumentException(
+            		"Service path not a valid KServiceRequest: " + servicePath);
+        }
+        return (KServiceRequest)o;
+    }
+    */
+}
