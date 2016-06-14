@@ -10,6 +10,7 @@ public class KServiceClient implements Serializable {
     
 	private Long appId = null;
 	private String clientId = null;
+	private String deviceUuid = null;
 	private String hostname = null;
 	private String browser = null;
 	private Double latitude = null;
@@ -34,6 +35,14 @@ public class KServiceClient implements Serializable {
 	
 	public void setClientId(String clientId) {
 		this.clientId = clientId;
+	}
+    
+	public String getDeviceUuid() {
+		return deviceUuid;
+	}
+    
+	public void setDeviceUuid(String deviceUuid) {
+		this.deviceUuid = deviceUuid;
 	}
     
 	public String getHostname() {
