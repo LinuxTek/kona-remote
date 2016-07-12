@@ -28,6 +28,14 @@
 		</dependency>
 		<!-- Kona Libs -->
 
+		<!-- Apache Http -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+          <version>4.5.2</version>
+        </dependency>
+		<!-- Apache Http -->
+
 		<!-- Jetty -->
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
