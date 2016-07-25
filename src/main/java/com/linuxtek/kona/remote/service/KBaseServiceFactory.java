@@ -161,7 +161,7 @@ public class KBaseServiceFactory {
     @SuppressWarnings("unchecked")
     private Class<? extends KService> getServiceClass(String name) throws ClassNotFoundException {
     	
-    	logger.debug("getServiceClass: basePackage: " + basePackage);
+    	//logger.debug("getServiceClass: basePackage: " + basePackage);
             
         if (basePackage == null) {
             basePackage = this.getClass().getPackage().getName();
@@ -169,7 +169,7 @@ public class KBaseServiceFactory {
         
         Class<? extends KService> c = null;
         try {
-            logger.debug("checking class for service name: " + name);
+            //logger.debug("checking class for service name: " + name);
             c = (Class<? extends KService>) Class.forName(name);
         } catch (ClassNotFoundException e) {
             if (basePackage != null) {
