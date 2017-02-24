@@ -9,6 +9,7 @@ public class KServiceClient implements Serializable {
 	private static final long serialVersionUID = 1L;
     
 	private Long appId = null;
+	private Long userId = null;
 	private String clientId = null;
 	private String deviceUuid = null;
 	private String hostname = null;
@@ -24,9 +25,18 @@ public class KServiceClient implements Serializable {
 	public Long getAppId() {
 		return appId;
 	}
+
 	
 	public void setAppId(Long appId) {
 		this.appId = appId;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 	
 	public String getClientId() {
